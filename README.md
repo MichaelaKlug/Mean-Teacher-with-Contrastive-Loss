@@ -1,27 +1,51 @@
 <div align="center">
    
-## Code taken and adapted from "Hierarchical Consistency Regularized Mean Teacher for Semi-supervised 3D Left Atrium Segmentation"
+## Semi-supervised Cardiac Image Segmentation Imposing a Contrastive Loss in the Mean Teacher Model
    
 </div>
 
-Pytorch implementation of our method for EMBC2021 paper: "Hierarchical Consistency Regularized Mean Teacher for Semi-supervised 3D Left Atrium Segmentation". 
+<p align="center">
+<img src="model.png" width="700">
+</p>
 
-## Citation
-If you find the codebase useful for your research, please cite the paper:
+## Data set
+
+The original ACDC data set may be downloaded from: [ACDC data](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html).
+
+The data set provided in the 'data' folder is the pre-processed ACDC data, created using the code by Chaitanya et al which can be found here: [Pre-processing code](https://github.com/krishnabits001/domain_specific_cl)
+
+* We evaluate our proposed semi-supervised method on the dataset of the Automated Cardiac Diagnosis Challende (ACDC) which consist of cine_MRI scnas of patients. The data set consists of training data and testing data. However, this code makes use of onlt the training data, which it will further split iinto training, validation and testing sets, in acoordance wiht similar papers of research. 
+
+## Installation
+
+To clone the repository:
+
+git clone  INSERT HERE 
+
+## Training
+
+Train the model
 ```
-@inproceedings{li2021hierarchical,
-  title={Hierarchical Consistency Regularized Mean Teacher for Semi-supervised 3D Left Atrium Segmentation},
-  author={Li, Shumeng and Zhao, Ziyuan and Xu, Kaixin and Zeng, Zeng and Guan, Cuntai},
-  booktitle={2021 43rd Annual International Conference of the IEEE Engineering in Medicine \& Biology Society (EMBC)},
-  pages={3395--3398},
-  year={2021},
-  organization={IEEE}
-}
+cd code
+python train_mmt.py --gpu 0 --exp model_name
 ```
+Params are the best setting in our experiment.
+
+## Testing
+ Test the model
+```
+python test_hierarchy.py --gpu 0 --model model_name
+```
+Our best model is uploaded.
+
+
+Any further information regarding the code may be found at the original site: [Original code we adpated](https://github.com/jacobzhaoziyuan/HCR-MT)
+
+
 
 ## Acknowledgement
 
-Part of the code is adapted from open-source codebase and original implementations of algorithms, 
-we thank these authors for their fantastic and efficient codebase:
+The Code is adapted from an open-source codebase "Hierarchical Consistency Regularized Mean Teacher for Semi-supervised 3D Left Atrium Segmentation".
+we thank these authors.
 
-*  UA-MT: https://github.com/yulequan/UA-MT
+*  HCR-MT: https://github.com/jacobzhaoziyuan/HCR-MT
