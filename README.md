@@ -20,7 +20,7 @@ The data set provided in the 'data' folder is the pre-processed ACDC data, creat
 
 To clone the repository:
 
-git clone  INSERT HERE 
+git clone https://github.com/MichaelaKlug/Mean-Teacher-with-Contrastive-Loss
 
 ## Training
 
