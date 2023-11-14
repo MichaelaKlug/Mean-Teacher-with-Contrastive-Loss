@@ -43,6 +43,7 @@ Any further information regarding the code may be found at the original site: [O
 ## Acknowledgement
 
 The Code is adapted from an open-source codebase "Hierarchical Consistency Regularized Mean Teacher for Semi-supervised 3D Left Atrium Segmentation".
-we thank these authors.
+
+We thank these authors.
 
 *  HCR-MT: https://github.com/jacobzhaoziyuan/HCR-MT
