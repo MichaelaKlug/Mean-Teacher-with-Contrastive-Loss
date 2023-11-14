@@ -24,19 +24,16 @@ git clone  INSERT HERE
 
 ## Training
 
-Train the model
 ```
 cd code
 python train_mmt.py --gpu 0 --exp model_name
 ```
-Params are the best setting in our experiment.
 
 ## Testing
- Test the model
+
 ```
 python test_hierarchy.py --gpu 0 --model model_name
 ```
-Our best model is uploaded.
 
 
 Any further information regarding the code may be found at the original site: [Original code we adpated](https://github.com/jacobzhaoziyuan/HCR-MT)
