@@ -74,7 +74,7 @@ def contrastive_loss(fs,ft_plus,negative_keys):
             negative_dot+=torch.dot(tensor1,tensor2)
         negative_exp=torch.exp(torch.tensor(negative_dot, dtype=torch.float64))
         negative_sum+=negative_exp
-    answer=torch.log(positive_exp/negative_sum)
+    answer=-1*torch.log(positive_exp/negative_sum)
     return answer
 
 # def contrastive_loss(fs,ft_plus,negative_keys):
