@@ -14,7 +14,7 @@ The original ACDC data set may be downloaded from: [ACDC data](https://www.creat
 
 The data set provided in the 'data' folder is the pre-processed ACDC data, created using the code by Chaitanya et al which can be found here: [Pre-processing code](https://github.com/krishnabits001/domain_specific_cl)
 
-* We evaluate our proposed semi-supervised method on the dataset of the Automated Cardiac Diagnosis Challende (ACDC) which consist of cine_MRI scnas of patients. The data set consists of training data and testing data. However, this code makes use of onlt the training data, which it will further split iinto training, validation and testing sets, in acoordance wiht similar papers of research. 
+* We evaluate our proposed semi-supervised method on the dataset of the Automated Cardiac Diagnosis Challende (ACDC) which consist of cine_MRI scans of patients. The data set consists of training data and testing data. However, this code makes use of only the training data, which it will further split into training, validation and testing sets, in accordance with similar papers of research. 
 
 ## Installation
 
